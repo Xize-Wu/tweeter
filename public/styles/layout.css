@@ -18,8 +18,49 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro";
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+nav {
+  display:flex;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  justify-content: space-between;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+span {
+  font-family: "Bungee";
+  align-self: center;
+  padding-left: 1.5em;
+}
+
+
+body{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  background-color: #6da2db;
+  background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.name{
+  align-self:center;
+  text-align: center;
+}
+
+main{
+  width:90%;
+  position:relative;
+}

@@ -1,0 +1,28 @@
+header{
+  height: 520px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #6da2db;
+  background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.invisible{
+  height: 120px;
+  width: 100%;
+}
+
+
+
+.new_tweet{
+  display:flex;
+  flex-wrap: wrap;
+  align-self: center;
+  padding-right: 1.5em;
+}
+
+.newt_tweet_icon{
+  align-items: flex-end;
+}
