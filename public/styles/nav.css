@@ -24,5 +24,5 @@ header{
 }
 
 .newt_tweet_icon{
-  align-items: flex-end;
+  align-self: flex-end;
 }

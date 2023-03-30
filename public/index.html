@@ -26,6 +26,7 @@
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
 
 <body>
@@ -47,9 +48,9 @@
       <div class="profile_pic">
         <img src="/images/profile-hex.png">
       </div>
-    </div class="name">
-        <h1>Xize Wu</h1>
-    </div>
+       <div class="name">
+        <h1>Nobody</h1>
+      </div>
     </div>
 
     </div>
@@ -58,11 +59,38 @@
   <!-- Page-specific (main) content here -->
   <main>
 
-    <h1>This is h1</h1>
-    <h2>This is h2</h2>
-    <p>This is a boring paragraph. I don't like boring paragraphs but it has to look professional.</p>
-    <h2>Another h2</h2>
-    <p>But the website is too bad to look professional.</p>
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form class="form-inline" action="/tweets" method="POST">
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button class="button" type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text"><b>140</b></output>
+        </div>
+      </form>
+    </section>
+    <section class="tweet-container">
+      <div class="user_profile">
+      <div class="avatar" id="avatar1">
+      </div>
+      <div class="name" id="name1"></div>
+      <div class="handle" id="handle1"></div>
+    </div>
+      <div class="tweet" id="text1"></div>
+      <div class="time" id="time1"></div> 
+      <div class="iconcollection" id="iconcollection">
+        <div class="icon" id="flag">
+          <i class="fa-regular fa-flag"></i>
+        </div>
+        <div class="icon" id="retweet">
+          <i class="fa-solid fa-retweet"></i>
+        </div>
+        <div class="icon" id="like">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
