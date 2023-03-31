@@ -1,4 +1,4 @@
-header{
+.header{
   height: 520px;
   width: 100%;
   display:flex;
@@ -13,8 +13,6 @@ header{
   height: 120px;
   width: 100%;
 }
-
-
 
 .new_tweet{
   display:flex;

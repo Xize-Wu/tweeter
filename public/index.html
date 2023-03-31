@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
 
+  <link rel="stylesheet" href="
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css
+    " integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -18,11 +23,11 @@
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css></script>
-  <script src="https://kit.fontawesome.com/b9258c0d68.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -42,13 +47,13 @@
     </div>
     <!-- solid style -->
   </nav>
-  <header>
+  <header class="header">
     <div class="invisible"></div>
     <div class="profile">
       <div class="profile_pic">
         <img src="/images/profile-hex.png">
       </div>
-       <div class="name">
+      <div class="name">
         <h1>Nobody</h1>
       </div>
     </div>
@@ -65,33 +70,13 @@
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div>
-          <button class="button" type="submit">Tweet</button>
+          <button class="button" type="submit" id="submit-button">Tweet</button>
           <output name="counter" class="counter" for="tweet-text"><b>140</b></output>
         </div>
       </form>
     </section>
     <section class="tweet-container">
-      <div class="user_profile">
-      <div class="avatar" id="avatar1">
-      </div>
-      <div class="name" id="name1"></div>
-      <div class="handle" id="handle1"></div>
-    </div>
-      <div class="tweet" id="text1"></div>
-      <div class="time" id="time1"></div> 
-      <div class="iconcollection" id="iconcollection">
-        <div class="icon" id="flag">
-          <i class="fa-regular fa-flag"></i>
-        </div>
-        <div class="icon" id="retweet">
-          <i class="fa-solid fa-retweet"></i>
-        </div>
-        <div class="icon" id="like">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-      </div>
     </section>
   </main>
 </body>
-
 </html>

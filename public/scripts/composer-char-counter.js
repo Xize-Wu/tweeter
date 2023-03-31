@@ -12,27 +12,32 @@ $(document).ready(function() {
   });
 
 
-  $(".tweet-container").on("mouseover", function() {
+  $(".tweet_article").on("mouseover", function() {
     $(this).css({
       'box-shadow': '5px 10px rgba(0, 0, 0, 0.3)'
     });
-  }
-  );
+  });
 
-  $(".tweet-container").on("mouseleave", function() {
+  $(".tweet_article").on("mouseleave", function() {
     $(this).css({
       'box-shadow': ''
     });
-  }
-  );
+  });
 
   $(".icon").on("mouseover", function() {
-    $(this).children().css({"color": "#fad000"})
-  }
-  );
+    $(this).children().css({"color": "#fad000"});
+  });
 
   $(".icon").on("mouseleave", function() {
-    $(this).children().css({"color": ""})
-  }
-  );
+    $(this).children().css({"color": ""});
+  });
+
+  //Form Submission using JQuery
+  $(".form-inline").submit(function(event) {
+    const data = $(this).serialize()
+    $.post("/tweets", data)
+    event.preventDefault();
+  });
+    
 });
+
