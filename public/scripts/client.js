@@ -5,21 +5,18 @@
  */
 
 
-// import { format } from './timeago.js';
-
 $(document).ready(function() {
-  
+
+
   const createTweetElement = function(obj) {
     let $tweet = `<article class="tweet_article">
-    <script src="dist/timeago.min.js"></script>
       <header class="user_profile">
         <div class="avatar" id="avatar"> <img src ="${obj.user.avatars}"></div>
         <div class="name" id="name">${obj.user.name}</div>
         <div class="handle" id="handle">${obj.user.handle}</div>
       </header>
       <div class="tweet" id="text">${obj.content.text}</div>
-
-      <div class="timeago" id = "time" datetime="2016-06-30 09:20:00"></div>
+      <div class="time" id="time">${timeago.format(obj.created_at)}</div>
       <footer class="iconcollection" id="iconcollection">
         <div class="icon" id="flag">
           <i class="fa-regular fa-flag"></i>

@@ -25,19 +25,29 @@ $(document).ready(function() {
   });
 
   $(".icon").on("mouseover", function() {
-    $(this).children().css({"color": "#fad000"});
+    $(this).children().css({ "color": "#fad000" });
   });
 
   $(".icon").on("mouseleave", function() {
-    $(this).children().css({"color": ""});
+    $(this).children().css({ "color": "" });
   });
 
   //Form Submission using JQuery
   $(".form-inline").submit(function(event) {
-    const data = $(this).serialize()
-    $.post("/tweets", data)
-    event.preventDefault();
+    const data = $(this).serialize();
+    const length = $(this).serialize().length;
+    if (length === 0) {
+      alert("Brevity is the soul of wit, but we need your tweet to have text in it.");
+      return false;
+    } else if (length > 140) {
+      alert("Speak less then 140 words, friend, and submit.");
+      return false;
+    } else {
+      $.post("/tweets", data);
+      event.preventDefault();
+      location.reload()
+    }
   });
-    
+
 });
 
