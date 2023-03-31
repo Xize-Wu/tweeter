@@ -6,7 +6,11 @@
 
 
 $(document).ready(function() {
-
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const createTweetElement = function(obj) {
     let $tweet = `<article class="tweet_article">
@@ -15,7 +19,8 @@ $(document).ready(function() {
         <div class="name" id="name">${obj.user.name}</div>
         <div class="handle" id="handle">${obj.user.handle}</div>
       </header>
-      <div class="tweet" id="text">${obj.content.text}</div>
+      <div class="tweet" id="text">${escape(obj.content.text)
+      }</div>
       <div class="time" id="time">${timeago.format(obj.created_at)}</div>
       <footer class="iconcollection" id="iconcollection">
         <div class="icon" id="flag">
