@@ -15,7 +15,7 @@
 .tweet{
   padding-bottom: 25px;
   margin: 25px;
-  padding-left: 35px;
+  padding-left: 0.5em;
   border-bottom: 1px solid black;
   width:100%;
 }

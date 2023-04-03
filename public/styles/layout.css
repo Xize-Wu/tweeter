@@ -19,40 +19,24 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro";
-}
-
-nav {
-  display:flex;
-  height: 120px;
-  background-color: #4056A1;
-  color: #FFFFFF;
-  justify-content: space-between;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-
-span {
-  font-family: "Bungee";
-  align-self: center;
-  padding-left: 1.5em;
-}
-
-
-body{
   display:flex;
   align-items: center;
-  flex-direction: column;
   align-content: center;
   background-color: #6da2db;
   background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
-.profile{
-  display: flex;
-  justify-content: center;
+.header{
+  height: 520px;
+  width: 100%;
+  display:flex;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
+  background-color: #6da2db;
+  background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 .name{
@@ -60,22 +44,27 @@ body{
   text-align: center;
 }
 
-main{
-  width:90%;
-}
-
 .form-inline{
   display:flex;
   justify-content: center;
   flex-direction: column;
+}
 
+.error-msg{
+  background-color: #FFACAC;
+  color: #A84448;
+  border: 2px solid #A84448;
+  padding: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  width: fit-content;
 }
 
 .button{
   background-color: #4056A1;
   color: #FFFFFF;
   font-family: "Bungee";
-
 }
 
 .counter{
@@ -89,4 +78,8 @@ main{
  border-left: 0px;
  border-right: 0px;
  margin-bottom: 16px;
+}
+
+.form--red{
+  color:#A84448
 }

@@ -1,0 +1,77 @@
+@media only screen and (max-width: 420px) {
+  /* Top nav bar */
+  .tweeter-logo{
+    font-size:large;
+    padding-left: 1em;
+  }
+
+   .new_tweet{
+     font-size: large;
+   }
+
+    /* Body-Styling */
+    body{
+      flex-direction: column;
+    }
+
+    main{
+      width:90%;
+    }
+
+    /* Body - Profile styling */    
+    .header{
+      padding-top: 120px;
+    }    
+
+   /* Body - Form styling */
+    .form-inline{
+      overflow-wrap:break-word;
+    }
+
+    /* Body - Tweet container styling */
+    .tweet_article{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .user_profile{
+      height: fit-content;
+      display: flex;
+    }
+
+    #name{
+      padding-left: 0.5em;
+      text-align:justify;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    nav{
+      position: fixed;
+    }
+    
+    body{
+      align-items: flex-start;
+    }
+    
+    .header{
+      padding-top: 120px;
+      width: 30%;
+      padding-left: 5%;
+      padding-right: 5%
+    }
+
+    main{
+      padding-top: 120px;
+      width: 65%;
+      padding-left: 5%
+    }
+
+    #name{
+      text-align: center;
+      overflow-wrap:break-word;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+  }

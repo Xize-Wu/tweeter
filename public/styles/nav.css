@@ -1,26 +1,30 @@
-.header{
-  height: 520px;
-  width: 100%;
+nav {
   display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #6da2db;
-  background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}
-
-.invisible{
   height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
 .new_tweet{
   display:flex;
   flex-wrap: wrap;
-  align-self: center;
-  padding-right: 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+  text-align: center;
+  padding-right: 3.5%;
 }
 
-.newt_tweet_icon{
-  align-self: flex-end;
+.new_tweet_icon{
+  padding: 0.2em
 }
+
+span {
+  font-family: "Bungee";
+  align-self: center;
+  padding-left: 1.5em;
+ }
