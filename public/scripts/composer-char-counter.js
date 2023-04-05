@@ -1,22 +1,34 @@
 //Form Submission using JQuery
-const errorMsg = function(){
-  $(".form-inline").submit(function(event) {
-    const data = $(this).serialize();
-    const text =$("#tweet-text").val()
+// const errorMsg = function(){
+//   $(".form-inline").submit(function(event) {
+//     const data = $(this).serialize();
+//     const text =$("#tweet-text").val()
 
-    if (text.length === 0) {
-      $(".no-error-msg").replaceWith($("<section class='error-msg'><b>Brevity is the soul of wit, but we need your tweet to have text in it.</b></section>"))
-      return false;
-    } else if (text.length > 140) {
-      $(".no-error-msg").replaceWith($("<section class='error-msg'><b>Speak less, friend, and enter.</b></section>"))
-      return false;
-    } else {
-      $.post("/tweets", data);
-      event.preventDefault();
-      location.reload()
-    }
-  });
-}
+//     if (text.length === 0) {
+//       $(".no-error-msg").replaceWith($("<section class='error-msg'><b>Brevity is the soul of wit, but we need your tweet to have text in it.</b></section>"))
+//       return false;
+//     } else if (text.length > 140) {
+//       $(".no-error-msg").replaceWith($("<section class='error-msg'><b>Speak less, friend, and enter.</b></section>"))
+//       return false;
+//     } else {
+//       // $.post("/tweets", data);
+//       $.ajax({
+//         method: "POST",
+//         url:"/tweets",
+//         data: data,
+//         success: function(result){
+//           renderTweets(result);
+//         },
+//         error: function (err){
+//           console.log("There was some error ",err);
+//         }
+        
+//       })
+//       event.preventDefault();
+//       //location.reload()
+//     }
+//   });
+// }
 
 //count input length
 const inputLength = function () {
@@ -53,7 +65,7 @@ $(document).on("mouseleave", ".icon", function(){
 })
 
 $(document).ready(function() {
-  errorMsg();
+  //errorMsg();
   inputLength();
 });
 
